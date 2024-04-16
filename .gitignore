@@ -1,3 +1,13 @@
+data/
+Data/
+temp/
+
 genres_original
 images_original
 test.ipynb
+
+## Transformers
+scott.ipynb
+vit_spectrogram-fintuned/
+vit_spectrogram-fintuned-eurosat/
+VIT-VoxCelebSpoof-Mel_Spectrogram-Synthetic-Voice-Detection-finetuned/
