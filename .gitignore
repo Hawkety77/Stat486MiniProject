@@ -1,10 +1,12 @@
 data/
 Data/
 temp/
+new_env/
 
 genres_original
 images_original
 test.ipynb
+weights.h5
 
 ## Transformers
 scott.ipynb
