@@ -58,16 +58,12 @@ model_xgb = XGBClassifier() # **rf_best_params
 model_xgb.fit(X_train, y_train_encoded)
 y_probas_xgb = model_xgb.predict_proba(X_test)
 
-# CNN
-df_cnn_probs = pd.read_csv('CNN/cnn_outputs/probabilities_cnn.csv')
-
 # Combining Predictions
 df_rf_probs = pd.DataFrame(y_probas_rf, columns=label_encoder.classes_)
 df_knn_probs = pd.DataFrame(y_probas_knn, columns=label_encoder.classes_)
 df_svm_probs = pd.DataFrame(y_probas_svm, columns=label_encoder.classes_)
 df_xgb_probs = pd.DataFrame(y_probas_xgb, columns=label_encoder.classes_)
 
-print(df_cnn_probs.columns)
 print(df_rf_probs.columns)
 print(df_knn_probs.columns)
 print(df_svm_probs.columns)
@@ -77,8 +73,7 @@ print(df_xgb_probs.columns)
 df_ensemble_probs = (df_rf_probs + 
                      df_knn_probs + 
                      df_svm_probs + 
-                     df_xgb_probs #+ 
-                     # df_cnn_probs
+                     df_xgb_probs
                      ) / 4
 
 # Get the index of the column with the maximum probability for each row
