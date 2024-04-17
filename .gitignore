@@ -8,8 +8,12 @@ images_original
 test.ipynb
 weights.h5
 
+## Apple
+.DS_Store
+
 ## Transformers
 scott.ipynb
 vit_spectrogram-fintuned/
 vit_spectrogram-fintuned-eurosat/
-VIT-VoxCelebSpoof-Mel_Spectrogram-Synthetic-Voice-Detection-finetuned/
+VIT-VoxCelebSpoof-M
+el_Spectrogram-Synthetic-Voice-Detection-finetuned/
