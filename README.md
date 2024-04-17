@@ -10,6 +10,7 @@ This project aims to classify audio files into 10 music genres using an variety 
 - `compression.ipynb`: Notebook used for feature engineering compression ratio.
 - `Ensemble.py`: Runs every traditional model and an ensemble of them and reports estimated accuracy.
 - `Final_Report.ipynb`: Summary of our findings and conclusions.
+- `eda.ipynb`: Exploratory data analysis on tabular data
 - `scott_transformer_tf.py`: Transformer code using TensorFlow and Keras
 - `scott_transformer_torch.py`: Transformer code using PyTorch and HuggingFace
 - `CNN/CNN.ipynb`: Preliminary CNN code to explore various techniques; `main.ipynb` is the updated version of `CNN.ipynb`
